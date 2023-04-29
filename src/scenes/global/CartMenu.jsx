@@ -70,7 +70,7 @@ const CartMenu = () => {
                                             alt={item?.name}
                                             width="123px"
                                             height="164px"
-                                            src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.url}`}
+                                            src={`https://ecomm-p7te.onrender.com${item?.attributes?.image?.data?.attributes?.url}`}
                                         />
                                     </Box>
                                     <Box flex="1 1 60%">

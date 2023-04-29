@@ -33,7 +33,7 @@ const Item = ({ item, width }) => {
                     alt={item.name}
                     width="300px"
                     height="400px"
-                    src={`http://localhost:1337${url}`}
+                    src={`https://ecomm-p7te.onrender.com${url}`}
                     onClick={() => navigate(`/item/${item.id}`)}
                     style={{ cursor: "pointer", objectFit: "cover" }}
                 />
