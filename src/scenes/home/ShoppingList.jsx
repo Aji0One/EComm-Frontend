@@ -16,7 +16,7 @@ const ShoppingList = () => {
 
     async function getItem() {
         const items = await fetch(
-            "https://ecomm-p7te.onrender.com/api/items?populate=image",
+            " http://0.0.0.0:10000/admin/api/items?populate=image",
             { method: "GET" }
         );
 
