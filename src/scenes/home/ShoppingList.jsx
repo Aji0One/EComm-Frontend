@@ -17,11 +17,11 @@ const ShoppingList = () => {
     async function getItem() {
         const items = await fetch(
 
-            "https://ecommbe.onrender.com/api/items?populate=image",
+            "https://ecomm-f6fw.onrender.com/api/items?populate=image",
             {
                 method: "GET",
                 headers: {
-                    Authorization: "bearer de3f2831f9db24c1360798e87d5b5f632a97366b0cdf06d93145edd148e5e96416dee6c8ecca706e1ccf1fd71294af302a78482884b240d3429189e7f22d0e41e738be01cd83599a6289adc262d640ec06d79ebe96b281a8ed7bfe555978a04e15239e7a391ded17ab9a2a0167579ab1ca7c92f121f65c0becf1770ee6a726e4"
+                    Authorization: "bearer a91a2db41be8ac26ebd468b587ca56ba6753a02fde31ce3143c0a414bdc7ed5698343b3c1f02fd0d23127fffe24c5827b8664a18c79f34682939790519dace995309c2476ae3b7963af6f1080cabab38e1b07e64ea5c49a091bc929ef2d78ce45051adedabde3fd916dbfcae494ce74224394e45834b6e448cdc5ff013680650"
                 }
 
             }

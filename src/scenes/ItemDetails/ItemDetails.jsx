@@ -22,8 +22,13 @@ const ItemDetails = () => {
 
     async function getItem() {
         const item = await fetch(
-            ` https://ecommbe.onrender.com/api/items/${itemId}?populate=image`,
-            { method: "GET" }
+            ` https://ecomm-f6fw.onrender.com/api/items/${itemId}?populate=image`,
+            {
+                method: "GET",
+                headers: {
+                    Authorization: "bearer a91a2db41be8ac26ebd468b587ca56ba6753a02fde31ce3143c0a414bdc7ed5698343b3c1f02fd0d23127fffe24c5827b8664a18c79f34682939790519dace995309c2476ae3b7963af6f1080cabab38e1b07e64ea5c49a091bc929ef2d78ce45051adedabde3fd916dbfcae494ce74224394e45834b6e448cdc5ff013680650"
+                }
+            }
         );
 
         const itemJson = await item.json();
@@ -33,8 +38,13 @@ const ItemDetails = () => {
 
     async function getItems() {
         const items = await fetch(
-            "https://ecommbe.onrender.com/api/items?populate=image",
-            { method: "GET" }
+            "https://ecomm-f6fw.onrender.com/api/items?populate=image",
+            {
+                method: "GET",
+                headers: {
+                    Authorization: "bearer a91a2db41be8ac26ebd468b587ca56ba6753a02fde31ce3143c0a414bdc7ed5698343b3c1f02fd0d23127fffe24c5827b8664a18c79f34682939790519dace995309c2476ae3b7963af6f1080cabab38e1b07e64ea5c49a091bc929ef2d78ce45051adedabde3fd916dbfcae494ce74224394e45834b6e448cdc5ff013680650"
+                }
+            }
         );
         const itemsJson = await items.json();
         setItems(itemsJson.data);
@@ -55,7 +65,7 @@ const ItemDetails = () => {
                         alt={item?.name}
                         width="100%"
                         height="100%"
-                        src={` https://ecommbe.onrender.com${item?.attributes?.image?.data?.attributes?.url}`}
+                        src={` https://ecomm-f6fw.onrender.com${item?.attributes?.image?.data?.attributes?.url}`}
                         style={{ objectFit: "Contain" }}
                     />
                 </Box>
