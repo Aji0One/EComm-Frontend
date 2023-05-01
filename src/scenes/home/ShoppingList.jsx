@@ -16,12 +16,14 @@ const ShoppingList = () => {
 
     async function getItem() {
         const items = await fetch(
+
             "https://ecommbe.onrender.com/api/items?populate=image",
             {
                 method: "GET",
                 headers: {
                     Authorization: "bearer de3f2831f9db24c1360798e87d5b5f632a97366b0cdf06d93145edd148e5e96416dee6c8ecca706e1ccf1fd71294af302a78482884b240d3429189e7f22d0e41e738be01cd83599a6289adc262d640ec06d79ebe96b281a8ed7bfe555978a04e15239e7a391ded17ab9a2a0167579ab1ca7c92f121f65c0becf1770ee6a726e4"
                 }
+
             }
         );
 
