@@ -65,7 +65,7 @@ const ItemDetails = () => {
                         alt={item?.name}
                         width="100%"
                         height="100%"
-                        src={` https://ecomm-f6fw.onrender.com/${item?.attributes?.image?.data?.attributes?.url}`}
+                        src={` ${item?.attributes?.image?.data?.attributes?.url}`}
                         style={{ objectFit: "Contain" }}
                     />
                 </Box>
@@ -79,7 +79,7 @@ const ItemDetails = () => {
 
                     <Box m="65px 0 25px 0">
                         <Typography variant='h3'>{item?.attributes?.name}</Typography>
-                        <Typography>₹{item?.attributes?.price}</Typography>
+                        <Typography>${item?.attributes?.price}</Typography>
                         <Typography sx={{ mt: "20px" }}>
                             {item?.attributes?.londDescription}
                         </Typography>

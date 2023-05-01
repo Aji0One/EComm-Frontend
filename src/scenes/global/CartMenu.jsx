@@ -70,7 +70,7 @@ const CartMenu = () => {
                                             alt={item?.name}
                                             width="123px"
                                             height="164px"
-                                            src={`https://ecomm-f6fw.onrender.com/${item?.attributes?.image?.data?.attributes?.url}`}
+                                            src={`${item?.attributes?.image?.data?.attributes?.url}`}
                                         />
                                     </Box>
                                     <Box flex="1 1 60%">
@@ -105,7 +105,7 @@ const CartMenu = () => {
                                             </Box>
 
                                             {/* Price */}
-                                            <Typography fontWeight="bold">₹{item.attributes.price}</Typography>
+                                            <Typography fontWeight="bold">${item.attributes.price}</Typography>
                                         </FlexBox>
 
                                     </Box>
@@ -118,7 +118,7 @@ const CartMenu = () => {
                     <Box m="20px 0">
                         <FlexBox m="20px 0">
                             <Typography fontWeight="bold">Subtotal</Typography>
-                            <Typography fontWeight="bold">₹{totalPrice}</Typography>
+                            <Typography fontWeight="bold">${totalPrice}</Typography>
                         </FlexBox>
                         <Button
                             sx={{

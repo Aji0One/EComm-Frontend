@@ -33,7 +33,7 @@ const Item = ({ item, width }) => {
                     alt={item.name}
                     width="300px"
                     height="400px"
-                    src={`https://ecomm-f6fw.onrender.com/${url}`}
+                    src={`${url}`}
                     onClick={() => navigate(`/item/${item.id}`)}
                     style={{ cursor: "pointer", objectFit: "cover" }}
                 />
@@ -78,7 +78,7 @@ const Item = ({ item, width }) => {
                 <Typography height="40px">
                     {name}
                 </Typography>
-                <Typography fontWeight="bold">₹{price}</Typography>
+                <Typography fontWeight="bold">${price}</Typography>
             </Box>
         </Box>
     )
