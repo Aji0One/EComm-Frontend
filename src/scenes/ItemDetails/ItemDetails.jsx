@@ -22,7 +22,7 @@ const ItemDetails = () => {
 
     async function getItem() {
         const item = await fetch(
-            ` https://ecomm-p7te.onrender.com/api/items/${itemId}?populate=image`,
+            ` https://ecomm-f6fw.onrender.com/api/items/${itemId}?populate=image`,
             { method: "GET" }
         );
 
@@ -33,7 +33,7 @@ const ItemDetails = () => {
 
     async function getItems() {
         const items = await fetch(
-            "https://ecomm-p7te.onrender.com/api/items?populate=image",
+            "https://ecomm-f6fw.onrender.com/api/items?populate=image",
             { method: "GET" }
         );
         const itemsJson = await items.json();
@@ -55,7 +55,7 @@ const ItemDetails = () => {
                         alt={item?.name}
                         width="100%"
                         height="100%"
-                        src={` https://ecomm-p7te.onrender.com${item?.attributes?.image?.data?.attributes?.url}`}
+                        src={` https://ecomm-f6fw.onrender.com${item?.attributes?.image?.data?.attributes?.url}`}
                         style={{ objectFit: "Contain" }}
                     />
                 </Box>
