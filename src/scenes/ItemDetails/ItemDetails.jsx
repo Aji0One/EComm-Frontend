@@ -65,7 +65,7 @@ const ItemDetails = () => {
                         alt={item?.name}
                         width="100%"
                         height="100%"
-                        src={` https://ecomm-f6fw.onrender.com${item?.attributes?.image?.data?.attributes?.url}`}
+                        src={` https://ecomm-f6fw.onrender.com/${item?.attributes?.image?.data?.attributes?.url}`}
                         style={{ objectFit: "Contain" }}
                     />
                 </Box>
