@@ -31,7 +31,7 @@ const Payment = ({ values, touched, errors, handleBlur, handleChange }) => {
                 error={!!touched.phoneNumber && !!errors.phoneNumber}
                 helperText={touched.phoneNumber && errors.phoneNumber}
                 sx={{ gridColumn: "span 4" }}
-                inputProps={{ maxLength: 10, pattern: new RegExp('/^[6-9][0-9]{9}$/') }}
+                inputProps={{ maxLength: 10 }}
             />
         </Box>
     )
